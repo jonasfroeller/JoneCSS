@@ -1,5 +1,11 @@
 # JoneCSS
 
+![Cloudflare](https://img.shields.io/website/https/jonecss.pages.dev?logo=cloudflarepages&label=CloudflarePages)
+[![JsDelivr](https://badgen.net/badge/icon/jsdelivr?icon=jsdelivr&label)](https://www.jsdelivr.com/)
+[![jsDelivr CDN](https://img.shields.io/jsdelivr/gh/hy/jonasfroeller/JoneCSS)](https://cdn.jsdelivr.net/gh/jonasfroeller/JoneCSS/jonecss.css)
+[![gitHub license](https://badgen.net/github/license/jonasfroeller/JoneCSS)](https://github.com/jonasfroeller/JoneCSS/blob/master/LICENSE)
+[![Buymeacoffee](https://badgen.net/badge/icon/buymeacoffee?icon=buymeacoffee&label)](https://buymeacoffee.com/jonasfroeller)
+
 ## Quick Start
 
 Add the following css `<link>` to the `<head>` of your HTML document:
