@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💾</text></svg>">
+    <link rel="stylesheet" href="main.css">
+    <title>Data</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">about</a></li>
+                <li><a href="./typography.html">typography</a></li>
+                <li><a href="./media.html">media</a></li>
+                <li><a href="./interactive.html">interactive/input</a></li>
+                <li><a href="#">data</a></li> <!-- # => active -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bordered">
+            <span class="indicator">Progress</span>
+            <meter value="75" min="0" max="100">75%</meter>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Document</span>
+            <div class="object-box">
+                <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"></object>
+            </div>
+
+            <div class="embed-box">
+                <embed src="./jonecss.css" type="audio/mpeg" height="60" width="144">
+            </div>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Table</span>
+            <table>
+                <caption>Table Caption</caption>
+                <colgroup>
+                    <col span="1" style="color: var(--contrast-color);">
+                    <col span="2" style="color: var(--secondary-color);">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cell 1</td>
+                        <td>Cell 2</td>
+                    </tr>
+                    <tr>
+                        <td>Cell 3</td>
+                        <td>Cell 4</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer 1</td>
+                        <td>Footer 2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Example</span>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Email: <a href="j.froe@gmx.at">j.froe@gmx.at</a><br>
+        </address>
+        <time datetime="">
+            <script> document.write(new Date); document.querySelector("time").setAttribute("datetime", new Date) </script>
+        </time> <br>
+        <a href="https://jonasfroeller.vercel.app">portfolio</a> <cite>by Jonas Fröller</cite>
+    </footer>
+</body>
+
+</html>

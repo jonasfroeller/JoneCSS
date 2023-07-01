@@ -1,4 +1,4 @@
-/* Customization/CSS-Variables */
+/* CUSTOMIZATION */
 :root, html[data-theme="light"] {
     --primary-color: #000000;
     --secondary-color: grey;
@@ -22,7 +22,7 @@
     :root, html[data-theme="dark"] {
         --primary-color: #ffffff;
         --secondary-color: grey;
-        --contrast-color: #1ad2df;
+        --contrast-color: #000000;
         --accent-color: rgb(255, 166, 0);
         --primary-background: #000000;
         --secondary-background: #424242;
@@ -39,13 +39,166 @@
     }
 }
 
-/* Default Styles */
+/* TYPOGRAPHY */
+/* INFO */
+/* headings: line height: 1.1-1.3x; letter spacing: -0.5-2% */
+/* body text: line height: 1.3-1.5; width: 50-75 characters; size: 18px; text block width: 600px */
 
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    margin: 0 0 0.25em 0;
+}
+
+a.h1-a, a.h2-a, a.h3-a, a.h4-a, a.h5-a, a.h6-a {
+    display: block;
+    width: fit-content;
+    font-weight: bold;
+}
+
+h1, a.h1-a {
+    font-size: 225%;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+h2, a.h2-a {
+    font-size: 200%;
+    line-height: 1.125;
+    letter-spacing: -0.5px;
+}
+
+h3, a.h3-a {
+    font-size: 175%;
+    line-height: 1.15;
+}
+
+h4, a.h4-a {
+    font-size: 150%;
+    line-height: 1.2;
+}
+
+h5, a.h5-a {
+    font-size: 125%;
+    line-height: 1.25;
+}
+
+h6, a.h6-a {
+    font-size: 100%;
+    line-height: 1.3;
+}
+
+/* TEXT */
+p {
+    max-width: 600px;
+    margin: 1.25em 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+p.text-lead {
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+/* LISTS */
+ul, ol {
+    list-style-position: inside;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    overflow-wrap: break-word;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: var(--accent-color);
+}
+
+a:not([class]):hover {
+    text-decoration: underline;
+}
+
+a.h1-a::before, a.h2-a::before, a.h3-a::before, a.h4-a::before, a.h5-a::before, a.h6-a::before {
+    content: '# ';
+    color: var(--accent-color);
+}
+
+a[href="#"] {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* ARTCILE */
+article {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    width: min(65ch, 100% - 4rem);
+    margin-inline: auto;
+}
+
+/* Quote */
+blockquote {
+    font-style: italic;
+    border-left: 10px solid var(--secondary-background);
+    margin: 1.5em 5px;
+    padding: 0.5em 10px;
+}
+
+blockquote p {
+    display: inline;
+}
+
+/* Code */
+pre, code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    background: var(--secondary-background);
+    border-radius: 5px;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 1em;
+    margin: 1.5em 5px;
+    white-space: pre-wrap;
+}
+
+pre.code-oneliner {
+    white-space: nowrap !important;
+}
+
+code {
+    padding: 0.25em 5px;
+}
+
+/* KBD */
+kbd {
+    border-radius: 5px;
+    background: var(--secondary-background);
+    color: var(--accent-color);
+    padding: 0.25em 5px;
+}
+
+/* OTHER */
+mark {
+    color: #000;
+}
+
+/* CSS RESETS & DEFAULT STYLES */
 html {
     color-scheme: dark light;
     -webkit-text-size-adjust: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 html:focus-within {
@@ -56,8 +209,10 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
 *, *::before, *::after {
@@ -79,9 +234,6 @@ input, textarea, button, select {
     font: inherit;
 }
 
-/* Elements */
-
-/* GENERAL */
 *, *::before, *::after {
     color: var(--primary-color);
     box-sizing: border-box;
@@ -102,10 +254,7 @@ input, textarea, button, select {
     }
 }
 
-* {
-    padding: 0;
-    margin: 0;
-}
+/* Elements */
 
 /* DATA */
 img, picture, svg, canvas, map, video, audio {
@@ -128,110 +277,25 @@ img, picture, svg, canvas, map, video, audio {
     height: 100%;
 }
 
+/* Table */
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-/* INPUT */
+/* INTERACTIVE */
+/* Input */
 input, button, textarea, select {
     font: inherit;
     line-height: inherit;
     color: inherit;
 }
 
-/* TEXT */
-h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-}
-
-h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
-    content: '# ';
-    color: var(--accent-color);
-}
-
-ul, ol {
-    list-style-position: inside;
-}
-
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--accent-color);
-}
-
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-mark {
-    color: #000;
-}
-
-/* HEADER */
-header {
-    z-index: 999;
-    top: 0;
-    padding: 1rem;
-    position: sticky;
-    background-color: var(--primary-background);
-    border-bottom: 2px solid var(--accent-color);
-}
-
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-header nav ul li {
-    list-style: none;
-}
-
-/* MAIN */
-
-/* INPUT */
 fieldset {
     padding: 1rem;
 }
 
-/* ARTCILE */
-article {
-    padding: 0 0.5rem 0.5rem 0.5rem;
-    width: min(65ch, 100% - 4rem);
-    margin-inline: auto;
-}
-
-/* QUOTE */
-blockquote {
-    border-left: 10px solid var(--secondary-background);
-    margin: 1.5em 5px;
-    padding: 0.5em 10px;
-}
-
-blockquote p {
-    display: inline;
-} 
-
-/* DETAILS */
-details p {
-    height: 0;
-    transition: 0.3s;
-}
-
-details[open] p {
-    height: max-content;
-}
-
-/* BUTTON */
+/* Button */
 button, [role="button"], input[type="submit"], input[type="button"], input[type="reset"] {
     all: unset;
     cursor: pointer;
@@ -251,81 +315,77 @@ button:hover, [role="button"]:hover, input[type="submit"]:hover, input[type="but
     opacity: 0.9;
 }
 
-/* ASIDE */
-/* SIDEBAR */
-/* Inspiration: https://every-layout.dev/layouts/sidebar/ */
-body[data-layout="sidebar"] {
-    display: flex;
-    flex-wrap: wrap;
+/* Details */
+details p {
+    height: 0;
+    transition: 0.3s;
 }
 
-body[data-layout="sidebar"] aside {
-    position: relative;
-    /* ↓ The width when the sidebar _is_ a sidebar */
-    flex-basis: 20rem;
-    flex-grow: 1;
+details[open] p {
+    height: max-content;
 }
 
-body[data-layout="sidebar"] aside ul {
+/* -- HEADER -- */
+header {
     z-index: 999;
     top: 0;
     padding: 1rem;
     position: sticky;
-    background-color: var(--secondary-background);
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-    padding: 0.5rem;
-    margin: 0rem;
-    border-bottom-right-radius: var(--border-radius)
+    background-color: var(--primary-background);
+    border-bottom: 2px solid var(--accent-color);
 }
 
-body[data-layout="sidebar"] aside ul li {
-    background-color: var(--primary-background);
-    border-radius: var(--border-radius);
-    padding: 0.25rem;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
     list-style: none;
 }
 
-body[data-layout="sidebar"] aside ul li input[type="radio"] {
-    display: none;
+/* -- MAIN -- */
+main, section, div {
+    position: relative;
 }
 
-body[data-layout="sidebar"] aside ul li label {
-    cursor: pointer;
-    transition: 0.3s;
+article {
+    padding: 1em 2.5em;
 }
 
-body[data-layout="sidebar"] aside ul li label:hover {
-    padding-left: 1rem;
+body:has(footer) main {
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
-body[data-layout="sidebar"] aside ul li input[type="radio"]:checked+label {
-    padding-left: 0rem;
-    color: var(--accent-color);
-    text-decoration: underline;
+body:has(footer) main article {
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
-body[data-layout="sidebar"] aside ul li input[type="radio"]:checked+label::before {
-    content: "";
-    display: inline-block;
-    width: 0.5rem;
-    height: 0.5rem;
+.bordered {
+    border: 2px solid var(--accent-color);
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    padding: 0.25em;
+    color: var(--contrast-color);
     background-color: var(--accent-color);
-    margin-right: 0.5rem;
+    max-height: 100%;
 }
 
-body[data-layout="sidebar"] aside ul li input[type="radio"]+label {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-body[data-layout="sidebar"] main {
-    /* ↓ Grow from nothing */
-    flex-basis: 0;
-    flex-grow: 999;
-    /* ↓ Wrap when the elements are of equal width */
-    min-inline-size: 50%;
+/* -- FOOTER -- */
+footer {
+    padding: 1rem;
+    background-color: var(--primary-background);
+    border-top: 2px solid var(--accent-color);
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>">
+    <link rel="stylesheet" href="main.css">
+    <title>Interactive</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">about</a></li>
+                <li><a href="./typography.html">typography</a></li>
+                <li><a href="./media.html">media</a></li>
+                <li><a href="#">interactive/input</a></li> <!-- # => active -->
+                <li><a href="./data.html">data</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bordered">
+            <span class="indicator">Buttons</span>
+            <button>Click me</button>
+            <details>
+                <summary>read more...</summary>
+                <p><a href="https://github.com/jonasfroeller">GitHub</a></p>
+            </details>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Inputs</span>
+            <fieldset title="Groups related elements in a form">
+                <legend>Fieldset:</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <input type="submit" value="Submit">
+            </fieldset>
+            <form>
+                <legend>Form:</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <input type="submit" value="Submit">
+            </form>
+            <textarea rows="4" cols="50">This is a multiline text area</textarea> <br>
+            <select>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Example</span>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Email: <a href="j.froe@gmx.at">j.froe@gmx.at</a><br>
+        </address>
+        <time datetime="">
+            <script> document.write(new Date); document.querySelector("time").setAttribute("datetime", new Date) </script>
+        </time> <br>
+        <a href="https://jonasfroeller.vercel.app">portfolio</a> <cite>by Jonas Fröller</cite>
+    </footer>
+</body>
+
+</html>

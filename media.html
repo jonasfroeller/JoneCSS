@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼️</text></svg>">
+    <link rel="stylesheet" href="main.css">
+    <title>Media</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">about</a></li>
+                <li><a href="./typography.html">typography</a></li>
+                <li><a href="#">media</a></li> <!-- # => active -->
+                <li><a href="./interactive.html">interactive/input</a></li>
+                <li><a href="./data.html">data</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bordered">
+            <span class="indicator">Image</span>
+            <figure>
+                <img id="frog" src="./assets/demo-image-bird.jpg" alt="An example image">
+                <figcaption>by <a
+                        href="https://pixabay.com/de/photos/vogel-europ%c3%a4isches-rotkehlchen-7930857/">sharkolot</a>
+                </figcaption>
+            </figure>
+
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+            </svg>
+
+            <canvas id="myCanvas"></canvas>
+
+            <img src="https://picsum.photos/200" usemap="#map">
+            <map name="map">
+                <area shape="rect" coords="0,0,20,20" alt="Floor" href="#">
+                <area shape="circle" coords="30,30,10" alt="Sun" href="#">
+            </map>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Video</span>
+            <video controls>
+                <source src="./assets/demo-video-frog.mp4"
+                    alt="https://pixabay.com/de/videos/frosch-schilf-gr%C3%BCn-113403" type="video/mp4">
+                <track src="./assets/demo-video-subtitles.vtt" type="text/vtt" kind="subtitles" srclang="en"
+                    label="English">
+            </video>
+
+            <div class="iframe-box">
+                <iframe src="https://www.example.com" title="example website content title"></iframe>
+            </div>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Audio</span>
+            <audio controls>
+                <source src="./assets/demo-audio-lovers-walking.mp3"
+                    alt="https://pixabay.com/de/music/moderner-jazz-lovers-walking-110966/" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Example</span>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Email: <a href="j.froe@gmx.at">j.froe@gmx.at</a><br>
+        </address>
+        <time datetime="">
+            <script> document.write(new Date); document.querySelector("time").setAttribute("datetime", new Date) </script>
+        </time> <br>
+        <a href="https://jonasfroeller.vercel.app">portfolio</a> <cite>by Jonas Fröller</cite>
+    </footer>
+</body>
+
+</html>

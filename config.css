@@ -1,0 +1,39 @@
+:root, html[data-theme="light"] {
+    --primary-color: #000000;
+    --secondary-color: grey;
+    --contrast-color: #ffffff;
+    --accent-color: rgb(255, 166, 0);
+    --primary-background: #ffffff;
+    --secondary-background: #c9c9c9;
+    --green: rgba(81, 179, 0, 0.486);
+    --red: rgba(177, 20, 20, 0.473);
+    --yellow: rgb(226, 230, 29);
+    --bright: rgb(245, 240, 240);
+    --medium: rgb(124, 124, 124);
+    --dark: rgb(30, 30, 30);
+    --shadow: rgba(0, 0, 0, 0.1);
+    --skeletonLoading-dark: hsl(200, 20%, 70%);
+    --skeletonLoading-bright: hsl(200, 20%, 95%);
+    --border-radius: 0.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root, html[data-theme="dark"] {
+        --primary-color: #ffffff;
+        --secondary-color: grey;
+        --contrast-color: #000000;
+        --accent-color: rgb(255, 166, 0);
+        --primary-background: #000000;
+        --secondary-background: #424242;
+        --green: rgba(81, 179, 0, 0.486);
+        --red: rgba(177, 20, 20, 0.473);
+        --yellow: rgb(226, 230, 29);
+        --bright: rgb(245, 240, 240);
+        --medium: rgb(124, 124, 124);
+        --dark: rgb(30, 30, 30);
+        --shadow: rgba(0, 0, 0, 0.1);
+        --skeletonLoading-dark: hsl(200, 20%, 70%);
+        --skeletonLoading-bright: hsl(200, 20%, 95%);
+        --border-radius: 0.25rem;
+    }
+}

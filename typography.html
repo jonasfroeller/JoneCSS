@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📜</text></svg>">
+    <link rel="stylesheet" href="main.css">
+    <title>Typography</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">about</a></li>
+                <li><a href="#">typography</a></li> <!-- # => active -->
+                <li><a href="./media.html">media</a></li>
+                <li><a href="./interactive.html">interactive/input</a></li>
+                <li><a href="./data.html">data</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bordered">
+            <span class="indicator">Headings</span>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Body Text</span>
+            <p class="text-lead">paragraph using .lead</p>
+            <p>paragraph</p>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Lists</span>
+            <ul>
+                <li>ul list item 1</li>
+                <li>ul list item 2</li>
+                <li>ul list item 3</li>
+            </ul>
+
+            <ol>
+                <li>ol list item 1</li>
+                <li>ol list item 2</li>
+                <li>ol list item 3</li>
+            </ol>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Links</span>
+            <a href="">default</a><br>
+            <a href="#"># link</a><br>
+            <a href="" class="h1-a">h1-a</a>
+            <a href="" class="h2-a">h2-a</a>
+            <a href="" class="h3-a">h3-a</a>
+            <a href="" class="h4-a">h4-a</a>
+            <a href="" class="h5-a">h5-a</a>
+            <a href="" class="h6-a">h6-a</a>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Quote</span>
+            <blockquote cite="https://blog.hubspot.com/sales/famous-quotes">
+                "Many of life's failures are people who did
+                not realize how close they were to success when they gave
+                up." -Thomas A. Edison
+            </blockquote>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Code</span>
+            <code>Code</code>
+            <pre>Pre</pre>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">KBD</span>
+            <kbd>ALT + ENTER</kbd>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Other</span>
+            <var>x = 5</var>
+            <abbr
+                title="Svelte means slender. It's used to describe people, not things, and it implies a certain elegance. You might say that a middle-aged woman who had kept a svelte figure could still pass for a sixteen-year-old girl.">
+                Svelte
+            </abbr> <br>
+            <span>I am</span> <b>bold</b> & <strong>strong</strong>, <i>italic</i> &
+            <em>emphasized</em>, <u>underlined</u>,
+            <del>strikethrough</del>, <mark>highlighted</mark>,
+            <small>smaller</small> <br>
+            <p>x<sub>2</sub></p>
+            <p>x<sup>2</sup></p>
+
+
+            <dd>Defines a description/value of a term in a description list</dd>
+            <del>Defines text that has been deleted from a document</del> <br>
+            <dfn>Specifies a term that is going to be defined within the content</dfn> <br>
+            <dl>
+                <dt title="Defines a term/name in a description list">Coffee</dt>
+                <dd>- black hot drink</dd>
+            </dl>
+            <bdi dir="rtl">Isolates a part of text that might be formatted in a different direction from other text
+                outside
+                it</bdi> <br>
+            <bdo dir="rtl">Overrides the current text direction</bdo> <br>
+            <ins>This text has been inserted into the document</ins> <br>
+            <data value="42">Adds a machine-readable translation of a given content</data>
+        </section>
+
+        <section class="bordered">
+            <span class="indicator">Example</span>
+
+            <h3>Heading</h3>
+            <p class="text-lead"> some info (p.lead)</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis obca.</p>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Email: <a href="j.froe@gmx.at">j.froe@gmx.at</a><br>
+        </address>
+        <time datetime="">
+            <script> document.write(new Date); document.querySelector("time").setAttribute("datetime", new Date) </script>
+        </time> <br>
+        <a href="https://jonasfroeller.vercel.app">portfolio</a> <cite>by Jonas Fröller</cite>
+    </footer>
+</body>
+
+</html>
