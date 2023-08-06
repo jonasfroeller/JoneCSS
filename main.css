@@ -4,6 +4,9 @@
 /* TYPOGRAPHY */
 @import url("./typography.css");
 
+/* LAYOUT */
+@import url("./layout.css");
+
 /* EXPERIMENTAL */
 @import url("./experimental.css");
 
