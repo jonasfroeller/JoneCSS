@@ -1,0 +1,38 @@
+/* DATA */
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-size: 5rem;
+}
+
+table colgroup col[span="1"] {
+    color: var(--contrast-color);
+}
+
+table colgroup col[span="2"] {
+    color: var(--secondary-color);
+}
+
+table thead tr th, table tbody tr td {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    padding: 0.5rem;
+}
+
+table thead tr th {
+    font-weight: bold;
+}
+
+table tbody tr td {
+    background-color: rgba(0, 0, 0, 0.1);
+}

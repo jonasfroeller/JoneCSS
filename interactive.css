@@ -1,0 +1,64 @@
+/* INTERACTIVE */
+
+/* INPUT */
+input, button, textarea, select {
+    font: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+input:focus, input:active, textarea:focus, textarea:active, select:focus, select:active {
+    border-color: var(--accent-color);
+    border-radius: 0;
+    outline: none;
+}
+
+[type=text], [type=email], [type=url], [type=password], [type=number], [type=date], [type=datetime-local], [type=month], [type=search], [type=tel], [type=time], [type=week], [multiple], [list], textarea, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-color: var(--primary-color);
+    border-width: 1px;
+    border-radius: 0;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    padding: 1rem;
+}
+
+/* BUTTON */
+button, [role="button"], input[type="submit"], input[type="button"], input[type="reset"] {
+    all: unset;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0.125rem 0.25rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-background);
+}
+
+button:active, [role="button"]:hover, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active {
+    scale: 0.95;
+}
+
+button:hover, [role="button"]:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {
+    border-color: var(--accent-color);
+    opacity: 0.9;
+}
+
+/* OTHER */
+details p {
+    height: 0;
+    transition: 0.3s;
+}
+
+details[open] p {
+    height: max-content;
+}

@@ -1,3 +1,5 @@
+/* CUSTOMIZATION */
+
 :root, html[data-theme="light"] {
     --primary-color: #000000;
     --secondary-color: grey;

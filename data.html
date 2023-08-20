@@ -26,7 +26,8 @@
     <main>
         <section class="bordered">
             <span class="indicator">Progress</span>
-            <meter value="75" min="0" max="100">75%</meter>
+            <progress value="50" min="0" max="100">50%</progress>
+            <meter max="1.0" min="0.0" value="0.5" high="0.75" low="0.25" optimum="0.5">75%</meter>
         </section>
 
         <section class="bordered">
@@ -42,39 +43,37 @@
 
         <section class="bordered">
             <span class="indicator">Table</span>
-            <table>
-                <caption>Table Caption</caption>
-                <colgroup>
-                    <col span="1" style="color: var(--contrast-color);">
-                    <col span="2" style="color: var(--secondary-color);">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>Header 1</th>
-                        <th>Header 2</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                    </tr>
-                    <tr>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>Footer 1</td>
-                        <td>Footer 2</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
-
-        <section class="bordered">
-            <span class="indicator">Example</span>
+            <div class="overflow-x-auto">
+                <table>
+                    <caption>Table Caption</caption>
+                    <colgroup>
+                        <col span="1">
+                        <col span="2">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Header 1</th>
+                            <th>Header 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Footer 1</td>
+                            <td>Footer 2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </section>
     </main>
 
@@ -85,7 +84,7 @@
         <time datetime="">
             <script> document.write(new Date); document.querySelector("time").setAttribute("datetime", new Date) </script>
         </time> <br>
-        <a href="https://jonasfroeller.vercel.app">portfolio</a> <cite>by Jonas Fröller</cite>
+        <a href="https://github.com/jonasfroeller/JoneCSS">JoneCSS</a> <cite>by Jonas Fröller</cite>
     </footer>
 </body>
 

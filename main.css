@@ -4,6 +4,12 @@
 /* TYPOGRAPHY */
 @import url("./typography.css");
 
+/* INTERACTIVE */
+@import url("./interactive.css");
+
+/* DATA */
+@import url("./data.css");
+
 /* LAYOUT */
 @import url("./layout.css");
 
@@ -96,48 +102,6 @@ img, picture, svg, canvas, map, video, audio {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-}
-
-/* INTERACTIVE */
-/* Input */
-input, button, textarea, select {
-    font: inherit;
-    line-height: inherit;
-    color: inherit;
-}
-
-fieldset {
-    padding: 1rem;
-}
-
-/* Button */
-button, [role="button"], input[type="submit"], input[type="button"], input[type="reset"] {
-    all: unset;
-    cursor: pointer;
-    transition: 0.3s;
-    padding: 0.125rem 0.25rem;
-    border-radius: 0.5rem;
-    border: 2px solid var(--primary-color);
-    background-color: var(--secondary-background);
-}
-
-button:active, [role="button"]:hover, input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active {
-    scale: 0.95;
-}
-
-button:hover, [role="button"]:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {
-    border: 2px solid var(--accent-color);
-    opacity: 0.9;
-}
-
-/* Details */
-details p {
-    height: 0;
-    transition: 0.3s;
-}
-
-details[open] p {
-    height: max-content;
 }
 
 /* -- HEADER -- */
